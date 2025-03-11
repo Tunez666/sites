@@ -1,0 +1,62 @@
+/* Основные стили */
+body {
+    background-color: #f3d5f0;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  /* Стили заголовка */
+  h1 {
+    color: #640007;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  /* Стили для контейнера кнопок */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Стили кнопок */
+  .btn-new {
+    background-color: #e57cb3;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Более закругленные кнопки */
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Playfair Display", serif;
+    min-width: 120px;
+  }
+  
+  .btn-new:hover {
+    background-color: #d6629e; /* Темнее при наведении */
+    transform: translateY(-2px); /* Небольшая анимация при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень при наведении */
+  }
+  
+  .btn-new:active {
+    transform: translateY(0); /* Возврат при клике */
+  }
+  
+ 
+  

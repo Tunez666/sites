@@ -1,0 +1,375 @@
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+.data-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #495057;
+}
+.data-table tr:hover {
+    background-color: #f5f5f5;
+}
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+.filter-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.filter-item {
+    flex: 1;
+    min-width: 200px;
+}
+.call-details {
+    display: flex;
+    flex-direction: column;
+}
+.call-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.call-info {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+.route-details {
+    display: flex;
+    flex-direction: column;
+}
+.route-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.route-info {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+.tariff-details {
+    display: flex;
+    flex-direction: column;
+}
+.tariff-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.tariff-info {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+.price {
+    font-weight: bold;
+    color: #28a745;
+}
+.car-details {
+    display: flex;
+    flex-direction: column;
+}
+.car-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.car-info {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+.operator-name {
+    font-weight: bold;
+}
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+body {
+    background-color: #f3d5f0;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили заголовка */
+h2 {
+    color: #640007;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Стили формы */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    width: 150px; /* Регулируй ширину */
+    text-align: right;
+}
+
+.form-group input {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #640007;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e57cb3;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #d6629e;
+    box-shadow: 0 0 5px rgba(214, 98, 158, 0.3);
+}
+
+/* Стили кнопок */
+.button-container {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e57cb3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+button:hover {
+    background-color: #d6629e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Стили для ссылки возврата */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #640007;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Стили для сообщений */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+    
+    .button-container {
+        grid-column: 1;
+    }
+}
+body {
+    background-color: #f3d5f0;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили заголовка */
+h2 {
+    color: #640007;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Стили формы */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    width: 150px; /* Регулируй ширину */
+    text-align: right;
+}
+
+.form-group input {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #640007;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e57cb3;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #d6629e;
+    box-shadow: 0 0 5px rgba(214, 98, 158, 0.3);
+}
+
+/* Стили кнопок */
+.button-container {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e57cb3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+button:hover {
+    background-color: #d6629e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Стили для ссылки возврата */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #640007;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Стили для сообщений */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
