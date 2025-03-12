@@ -1,0 +1,105 @@
+/* Основные стили */
+body {
+    background-color: #AEC09A;
+    margin: 0;
+    padding: 20px; /* Добавили отступы */
+    font-family: "Playfair Display", serif;
+    min-height: 100vh;
+    display: block; /* Изменили с flex на block */
+}
+
+/* Контейнер */
+.container {
+    background: #AEC670;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Увеличили максимальную ширину */
+    width: 90%;
+    margin: 0 auto; /* Центрирование контейнера */
+    overflow-y: auto; /* Добавили прокрутку при необходимости */
+}
+
+/* Контейнер формы */
+.form-container {
+    display: flex;
+    gap: 30px; /* Увеличили отступ между колонками */
+    flex-wrap: wrap;
+}
+
+/* Колонки формы */
+.form-column {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px; /* Добавили отступ снизу */
+}
+
+/* Поля ввода */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px; /* Увеличили padding */
+    border: 2px solid #344C11;
+    border-radius: 10px;
+    background-color: #AEC09A;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Метки */
+label {
+    display: block;
+    color: #344C11;
+    font-weight: bold;
+    margin-bottom: 5px; /* Добавили отступ снизу */
+}
+
+/* Блок с кнопкой отправки */
+.form-submit {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 20px; /* Добавили отступ снизу */
+}
+
+/* Кнопка отправки */
+input[type="submit"] {
+    background-color: #344C11;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto; /* Изменили с 100% на auto */
+    min-width: 200px;
+}
+
+input[type="submit"]:hover {
+    background-color: #778D45;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .form-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-column {
+        width: 100%;
+        min-width: 100%;
+    }
+}

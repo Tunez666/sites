@@ -1,0 +1,87 @@
+/* Основные стили */
+body {
+    background-color: #AEC09A; /* Светло-зеленый фон */
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контейнер */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Заголовок */
+h1 {
+    color: #1A2902; /* Темно-зеленый цвет */
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* Контейнер кнопок */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Кнопки */
+.btn-new {
+    background-color: #344C11; /* Глубокий зеленый */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Playfair Display", serif;
+    min-width: 120px;
+}
+
+.btn-ex{
+    background-color: #B20000; 
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Playfair Display", serif;
+    min-width: 120px;
+}
+
+.btn-ex:hover {
+    background-color: #FD292F; /* Светлее при наведении */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-new:hover {
+    background-color: #778D45; /* Светлее при наведении */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-new:active {
+    transform: translateY(0);
+}
+
+/* Дополнительно: Тень для контейнера */
+.container {
+    background: #AEC670; /* Нежно-зеленый */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

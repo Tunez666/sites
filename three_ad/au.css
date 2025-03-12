@@ -1,0 +1,68 @@
+/* Основные стили */
+body {
+    background-color: #AEC09A; /* Светло-зеленый фон */
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контейнер */
+.container {
+    text-align: center;
+    background: #AEC670; /* Нежно-зеленый */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Заголовок */
+h2 {
+    color: #1A2902; /* Темно-зеленый */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Поля ввода */
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #344C11;
+    border-radius: 10px;
+    background-color: #AEC09A;
+    font-size: 1rem;
+}
+
+/* Метки */
+label {
+    display: block;
+    color: #344C11;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Кнопка входа */
+input[type="submit"] {
+    background-color: #344C11;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #778D45;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
